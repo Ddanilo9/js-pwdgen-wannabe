@@ -14,10 +14,16 @@ console.log(anniUtente);
 let coloreUtente = prompt('Quale è il tuo colore preferito?');
 console.log(coloreUtente);
 
+//aggiungiamo il calcolatore di un numero random da 1a 100
+let numRandom = Math.floor(Math.random()*100);
+
+console.log(numRandom);
+
 //prendo nell'html l'elemento che voglio sovrascrivere tramite l'ID
 let password = document.getElementById(psw);
 
 //stampo il contenuto di quello che voglio esca scritto 
 console.dir(password);
-psw.innerHTML = nomeUtente + anniUtente + coloreUtente + '26';
+
+psw.innerHTML = nomeUtente + anniUtente + coloreUtente + numRandom;
 
